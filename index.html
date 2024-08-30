@@ -144,7 +144,7 @@
       function calculateSteps() {
         const number = document.getElementById('number').value;
        
-        fetch(`http://127.0.0.1:5000/collatz?number=${number}`)
+        fetch(`https://claudiok.pythonanywhere.com/collatz?number=${number}`)
            .then(response => response.json())
            .then(data => {
             if (data.error) {
